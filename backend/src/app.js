@@ -1,9 +1,15 @@
 import express from 'express';
 
-class App {
-  constructor() {
-    this.server = express();
-  }
-}
+const app = express();
 
-export default new App().server
+app.use(express.json());
+
+app.post('/translate', (req, resp) => {
+  const {number} =  req.body;
+
+  
+
+  return resp.json(number)
+})
+
+export default app;
