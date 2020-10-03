@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "dev:debug": "nodemon --inspect src/server.js",
+    "eslintRun": "yarn eslint --fix src --ext js",
+    "queue": "nodemon src/queue.js"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.0",
+    "sucrase": "3.10.1"
+  }
+}
