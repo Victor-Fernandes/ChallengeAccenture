@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       
       <span>Accenture</span>
+      <span>Changeler</span>
       
       <header className="App-header">
         <img src={logo}  alt="moblie" />
